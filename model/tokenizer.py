@@ -12,9 +12,8 @@ if 'FirstTextWorldProblems/ftwp/' in os.path.realpath(__file__):
 else:
     _FILE_PREFIX = ''
 
-VOCAB_FILE = _FILE_PREFIX + 'vocab/starting_vocab.txt'
-WEIGHT_DIR = _FILE_PREFIX + 'weights/'
-
+VOCAB_FILE = './FirstTextWorldProblems/vocab/starting_vocab.txt'
+WEIGHT_DIR = './FirstTextWorldProblems/weights/'
 
 class Tokenizer:
     def __init__(self, device):
