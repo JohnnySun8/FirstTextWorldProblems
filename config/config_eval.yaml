@@ -2,7 +2,7 @@ general:
   hcp: 0                            # used handicap
 
 checkpoint:
-  pretrained_experiment_path: 'weights/agent_weights'    # Path of ptetrained model. If path == '' nothing is loaded
+  pretrained_experiment_path: './FirstTextWorldProblems/weights/agent_weights'    # Path of ptetrained model. If path == '' nothing is loaded
 
 training:
   batch_size: 1                     # Batch size of the training.
