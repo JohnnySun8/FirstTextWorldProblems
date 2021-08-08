@@ -151,7 +151,7 @@ class NavigationModel(nn.Module):
     def initialize_trained_model(cls, device):
         """ Initializes the model from the pre-trained weights. """
         model = cls(device=device)
-        model_path = os.path.join(_FILE_PREFIX, 'weights/navigation_weights_16')
+        model_path = './FirstTextWorldProblems/weights/navigation_weights_16'
         model.load_state_dict(torch.load(model_path, map_location=device), strict=True)
         print('Loaded model from {}'.format(model_path))
         return model
