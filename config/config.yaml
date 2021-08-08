@@ -9,7 +9,7 @@ tensorboard:
 checkpoint:
   experiment_tag: 'LeDeepChef'                           # Name of the experiment.
   model_checkpoint_path: 'saved_models'                  # Path where the model should be saved.
-  pretrained_experiment_path: 'weights/agent_weights'    # Path of ptetrained model. If path == '' nothing is loaded
+  pretrained_experiment_path: './FirstTextWorldProblems/weights/agent_weights'    # Path of ptetrained model. If path == '' nothing is loaded
   save_frequency: 3600                                   # in seconds
 
 training:
