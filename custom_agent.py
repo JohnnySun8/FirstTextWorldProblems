@@ -24,7 +24,7 @@ Transition = recordclass('Transition', 'reward index output value done')
 class CustomAgent:
     def __init__(self, verbose=False, **kwargs) -> None:
         # Load the config file
-        config_file = kwargs['config_file_path'] if 'config_file_path' in kwargs else "config/config.yaml"
+        config_file = "./FirstTextWorldProblems/config/config.yaml"
         with open(config_file) as reader:
             self.config = yaml.safe_load(reader)
         if 'update_config_fun' in kwargs and kwargs['update_config_fun'] is not None:
