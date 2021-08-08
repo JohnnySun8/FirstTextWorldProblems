@@ -25,7 +25,7 @@ class ItemScorer:
     - Which utilities are needed, e.g. 'knife, BBQ'
     """
     def __init__(self, device):
-        model_path = 'weights/itemscorer_action_generator_32'
+        model_path = './FirstTextWorldProblems/weights/itemscorer_action_generator_32'
         encoder_hidden_dim = 32
         self.model = ItemScorerModel(device=device,
                                       encoder_hidden_dim=encoder_hidden_dim,
@@ -270,7 +270,7 @@ class CmdTranslator(nn.Module):
     def initialize_trained_model(cls, device):
         """ Initializes the model from the pre-trained weights. """
         model = cls(device=device)
-        model_path = os.path.join(_FILE_PREFIX, 'weights/translator_weights_16')
+        model_path = './FirstTextWorldProblems/weights/translator_weights_16'
         model.load_state_dict(torch.load(model_path, map_location=device), strict=True)
         print('Loaded model from {}'.format(model_path))
         return model
