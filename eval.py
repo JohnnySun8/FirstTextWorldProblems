@@ -31,7 +31,7 @@ class Evaluation:
             print_c('No cuda capable device detected!')
             raise NotImplemented
 
-        self.agent = ManualCustomAgent(config_file_path='config/config_eval.yaml')
+        self.agent = ManualCustomAgent(config_file_path='./FirstTextWorldProblems/config/config_eval.yaml')
         self.env = Environment(game_dir)
         self.out_handler = OutputHandler()
         self.input_handler = InputHandler(callback=self.do_step)
