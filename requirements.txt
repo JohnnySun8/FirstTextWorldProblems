@@ -5,13 +5,13 @@ tensorboardX
 textworld==1.1.1
 tqdm
 argparse
-gym==0.12.0
+#gym==0.12.0
 termcolor
-ipykernel
+ipykernel==4.8.2 
 # tensorflow
 pandas
 recordclass
-pprint
+#pprint
 allennlp
 sh
 gpustat
