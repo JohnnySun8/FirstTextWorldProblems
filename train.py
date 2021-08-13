@@ -15,7 +15,7 @@ import sys
 import yaml
 from utils import make_path
 
-from dalab.grid_search.grid_search import GridSearcher
+#from dalab.grid_search.grid_search import GridSearcher
 from utils import get_points
 from custom_agent import CustomAgent
 
